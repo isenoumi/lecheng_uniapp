@@ -1,0 +1,949 @@
+{
+  // "condition": { //模式配置，仅开发期间生效
+  // 	"current": 0, //当前激活的模式(list 的索引项)
+  // 	"list": [{
+  // 		"name": "test", //模式名称
+  // 		"path": "pages/componentsA/test/test", //启动页面，必选
+  // 		"query": "" //启动参数，在页面的onLoad函数里面得到
+  // 	}]
+  // },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      } // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+    },
+    {
+      "path": "pages/error/404",
+      "style": {
+        "navigationBarTitleText": "页面不存在"
+      }
+    },
+    {
+      "path": "pages/index/city",
+      "style": {
+        "navigationBarTitleText": "选择城市",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/center/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/developing/index",
+      "style": {
+        "navigationBarTitleText": "建设中",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/shop/shop",
+      "style": {
+        "navigationBarTitleText": "蓝芽积分",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      } // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+    }
+    // {
+    // 	"path": "pages/integral/index",
+    // 	"style": {
+    // 		"navigationBarTitleText": "我的积分",
+    // 		"enablePullDownRefresh": false
+    // 	}
+
+    // },
+    // {
+    // 	"path": "pages/ranking/index",
+    // 	"style": {
+    //  	"navigationBarTitleText": "积分排名",
+    // 		"enablePullDownRefresh": false
+    // 	}
+
+    // },
+  ],
+
+  "subPackages": [
+    {
+      "root": "pageA",
+      "pages": [
+        {
+          "path": "check/check",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "checkSuccess/checkSuccess",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "check/checkRecord/checkRecord",
+          "style": {
+            "navigationBarTitleText": "打卡记录",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "signIn/signIn",
+
+          "style": {
+            "navigationBarTitleText": "我要打卡",
+            "enablePullDownRefresh": false,
+            // "navigationBarTextStyle": "white"
+            // "navigationBarBackgroundColor": "transparent"
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "invite/invite",
+          "style": {
+            "navigationBarTitleText": "邀请新用户",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "userShoppingOrder/userShoppingOrder",
+          "style": {
+            "navigationBarTitleText": "兑换记录",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+
+        {
+          "path": "integral/index",
+          "style": {
+            "navigationBarTitleText": "我的积分",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "integral/details",
+          "style": {
+            "navigationBarTitleText": "商品详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "ranking/index",
+
+          "style": {
+            "navigationBarTitleText": "积分排名",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "choiceqst/detail",
+
+          "style": {
+            "navigationBarTitleText": "答题",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "enter/index",
+
+          "style": {
+            "navigationBarTitleText": "手动录入",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "activity/index",
+          "style": {
+            "navigationBarTitleText": "活动管理",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "activity/evaluate",
+          "style": {
+            "navigationBarTitleText": "活动评价内容",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "activity/evaluate_detail",
+          "style": {
+            "navigationBarTitleText": "活动评价内容",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "competition/index",
+          "style": {
+            "navigationBarTitleText": "答题竞赛",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "competition/details",
+          "style": {
+            "navigationBarTitleText": "答题",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        }
+        // {
+        // 	"root": "pages/activity",
+        // 	"pages": [
+
+        // 		{
+        // 			"path": "evaluate",
+        // 			"style": {
+        // 				"navigationBarTitleText": "活动评价内容",
+        // 				"enablePullDownRefresh": false
+        // 				// "navigationStyle": "custom",
+        // 				// "navigationBarTextStyle": "white"
+        // 			}
+
+        // 		},
+        // 		{
+        // 			"path": "evaluate_detail",
+        // 			"style": {
+        // 				"navigationBarTitleText": "活动评价内容",
+        // 				"enablePullDownRefresh": false
+        // 				// "navigationStyle": "custom",
+        // 				// "navigationBarTextStyle": "white"
+        // 			}
+
+        // 		}
+        // 	]
+        // }
+      ]
+    },
+    {
+      "root": "pageB",
+      "pages": [
+        {
+          "path": "classificationCheck/index",
+          "style": {
+            "navigationBarTitleText": "打卡",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "check/checkVideo",
+          "style": {
+            "navigationBarTitleText": "义务督导员",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "21check/check",
+          "style": {
+            "navigationBarTitleText": "打卡",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "21check/index",
+          "style": {
+            "navigationBarTitleText": "21天打卡",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "check/index",
+          "style": {
+            "navigationBarTitleText": "分类打卡",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "check/check",
+          "style": {
+            "navigationBarTitleText": "拍照打卡",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "activitySquare/index",
+          "style": {
+            "navigationBarTitleText": "活动广场",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "questionnaire/index",
+          "style": {
+            "navigationBarTitleText": "问卷调查",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "citizenParticipation/index",
+          "style": {
+            "navigationBarTitleText": "市民参与",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "developing/index",
+          "style": {
+            "navigationBarTitleText": "建设中",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "ask/index",
+          "style": {
+            "navigationBarTitleText": "我随便问",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "photos/index",
+          "style": {
+            "navigationBarTitleText": "我随便拍",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "declare/index",
+          "style": {
+            "navigationBarTitleText": "我要申报",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "speak/index",
+          "style": {
+            "navigationBarTitleText": "我随便说",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "questionnaire/details",
+          "style": {
+            "navigationBarTitleText": "问卷页",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "questionnaire/qrcode",
+          "style": {
+            "navigationBarTitleText": "问卷二维码",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activitycustomized/index",
+          "style": {
+            "navigationBarTitleText": "活动定制",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        // {
+        //         "path": "activitycustomized/index",
+        //         "style": {
+        //           "navigationBarTitleText": "活动定制",
+        //           "enablePullDownRefresh": false
+        //         }
+
+        //       },
+        {
+          "path": "activitycustomized/details",
+          "style": {
+            "navigationBarTitleText": "大型活动",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "activitycustomized/information",
+          "style": {
+            "navigationBarTitleText": "活动详情",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        // {
+        //   "path": "activitycustomized/information",
+        //   "style": {
+        //     "navigationBarTitleText": "活动详情",
+        //     "enablePullDownRefresh": false
+        //   }
+
+        // },
+        // {
+        //   "path": "appointmenteacher/index",
+        //   "style": {
+        //     "navigationBarTitleText": "预约老师",
+        //     "enablePullDownRefresh": false
+        //   }
+
+        // },
+        {
+          "path": "appointmenteacher/index",
+          "style": {
+            "navigationBarTitleText": "预约老师",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "appointmenteacher/details",
+          "style": {
+            "navigationBarTitleText": "老师详情",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "appointmentorder/index",
+          "style": {
+            "navigationBarTitleText": "预约订单",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "appointmentorder/details",
+          "style": {
+            "navigationBarTitleText": "订单详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity_manager/index",
+          "style": {
+            "navigationBarTitleText": "我的培训任务",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity_manager/qrcode",
+          "style": {
+            "navigationBarTitleText": "培训二维码",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity_manager/detail",
+          "style": {
+            "navigationBarTitleText": "培训任务详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity_manager/underway",
+          "style": {
+            "navigationBarTitleText": "培训任务进行中",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity_manager/evaluate",
+          "style": {
+            "navigationBarTitleText": "培训结果查看",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity_manager/evaluate_detail",
+          "style": {
+            "navigationBarTitleText": "评价内容查看",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "myreservation/index",
+          "style": {
+            "navigationBarTitleText": "我要预约",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "activity/index",
+          "style": {
+            "navigationBarTitleText": "培训课程",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "activity/evaluate",
+          "style": {
+            "navigationBarTitleText": "培训反馈",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "activity/evaluate_detail",
+          "style": {
+            "navigationBarTitleText": "查看评价",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "choiceqst/detail",
+
+          "style": {
+            "navigationBarTitleText": "答题",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pageC",
+      "pages": [
+        {
+          "path": "activity_order/index",
+          "style": {
+            "navigationBarTitleText": "活动详情",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "check/index",
+          "style": {
+            "navigationBarTitleText": "我要打卡",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "convenientServices/index",
+          "style": {
+            "navigationBarTitleText": "服务查询",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "convenientServices/positionInfo",
+          "style": {
+            "navigationBarTitleText": "点位详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "message/detail",
+          "style": {
+            "navigationBarTitleText": "消息详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "message/list",
+          "style": {
+            "navigationBarTitleText": "我的消息",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "feedbackCenter/index",
+          "style": {
+            "navigationBarTitleText": "反馈中心",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "feedbackCenter/detail",
+          "style": {
+            "navigationBarTitleText": "反馈详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "points/index",
+          "style": {
+            "navigationBarTitleText": "积分明细",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "choiceqst/detail",
+          "style": {
+            "navigationBarTitleText": "答题详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "course/index",
+          "style": {
+            "navigationBarTitleText": "课程栏目",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "course/list",
+          "style": {
+            "navigationBarTitleText": "课程列表",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        // {
+        // 	"path": "course/detail",
+        // 	"style": {
+        // 		"navigationBarTitleText": "课程详情",
+        // 		"navigationStyle": "custom",
+        // 		"navigationBarTextStyle": "white"
+        // 	}
+
+        // },
+        {
+          "path": "course/detail",
+          "style": {
+            "navigationBarTitleText": "课程详情",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "course/knowledge",
+          "style": {
+            "navigationBarTitleText": "课程详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "knowledge/detail",
+          "style": {
+            "navigationBarTitleText": "内容详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "knowledge/index",
+          "style": {
+            "navigationBarTitleText": "文化知识栏目",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "knowledge/list",
+          "style": {
+            "navigationBarTitleText": "文化知识栏目",
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "auth/register",
+          "style": {
+            "navigationBarTitleText": "个人信息",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "auth/login",
+          "style": {
+            "navigationBarTitleText": "授权登录",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pageD",
+      "pages": [
+        {
+          "path": "present/present",
+          "style": {
+            "navigationBarTitleText": "礼品领取",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "presentRecord/presentRecord",
+          "style": {
+            "navigationBarTitleText": "礼物兑换记录",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "address/index",
+          "style": {
+            "navigationBarTitleText": "收货地址",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "address/add_address",
+          "style": {
+            "navigationBarTitleText": "新增收货地址",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "shop/index",
+          "style": {
+            "navigationBarTitleText": "积分商城",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "shop/details",
+          "style": {
+            "navigationBarTitleText": "商品详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "order/index",
+          "style": {
+            "navigationBarTitleText": "订单详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "search/index",
+          "style": {
+            "navigationBarTitleText": "搜索",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "signln/signln",
+          "style": {
+            "navigationBarTitleText": "我要打卡",
+            "enablePullDownRefresh": false,
+            // "navigationBarTextStyle": "white"
+            // "navigationBarBackgroundColor": "transparent"
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/education",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "宣教知识详情",
+            "enablePullDownRefresh": false,
+            "usingComponents": {}
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/supervisor",
+      "pages": [
+        {
+          "path": "task",
+          "style": {
+            "navigationBarTitleText": "我的任务",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "宣教二维码",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "task-detail",
+          "style": {
+            "navigationBarTitleText": "任务详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "督导员工具",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "register",
+          "style": {
+            "navigationBarTitleText": "手动录入",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/activity_manager",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "活动任务",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "评价码",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "活动详情",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "underway",
+          "style": {
+            "navigationBarTitleText": "活动",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "evaluate",
+          "style": {
+            "navigationBarTitleText": "评价详情",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        },
+        {
+          "path": "evaluate_detail",
+          "style": {
+            "navigationBarTitleText": "反馈结果",
+            "enablePullDownRefresh": false
+            // "navigationStyle": "custom",
+            // "navigationBarTextStyle": "white"
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    // 页面路径
+    "pages/index/index":
+      // 页面的预下载配置
+      {
+        "network": "all", // all(不限网络) wifi(仅wifi下预下载)
+        "packages": ["pageA", "pageB", "pageC", "pageD"] // 预下载分包的 root 或 name。__APP__ 表示主包
+      }
+  },
+  "globalStyle": {
+    "navigationBarTitleText": "宣教云",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF",
+
+    "backgroundColorTop": "#FFFFFF", // iOS APP真机bounce回弹区域默认灰色,建议统一重置为白色
+    "app-plus": {
+      "titleNView": {
+        "splitLine": true
+      }
+    },
+    "usingComponents": {
+      "txv-video": "plugin://tencentvideo/video"
+    }
+  },
+  "tabBar": {
+    "color": "#909399",
+    "selectedColor": "#1DD19B",
+    "backgroundColor": "#FFFFFF",
+
+    // "borderStyle": "transparent",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/assets/index/蒙版组 20.png",
+        "selectedIconPath": "static/assets/index/蒙版组 21.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "static/assets/index/蒙版组 23.png",
+        "selectedIconPath": "static/assets/index/蒙版组 22.png",
+        "text": "积分商城"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "iconPath": "static/assets/index/蒙版组 24.png",
+        "selectedIconPath": "static/assets/index/蒙版组 25.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

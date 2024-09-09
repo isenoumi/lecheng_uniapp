@@ -1,0 +1,61 @@
+page {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .footerImg {
+    width: 750rpx;
+    position: absolute;
+    bottom: 0;
+
+    image {
+      width: 750rpx;
+    }
+  }
+
+  .mainBox {
+    height: 100%;
+
+    .info {
+      font-size: 27rpx;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: #29CE8C;
+      text-align: center;
+      margin-top: 40rpx;
+    }
+
+    .box {
+      margin: 0 auto;
+      width: 697rpx;
+      height: 1341rpx;
+      background: #BEE3D3;
+      padding-top: 26rpx;
+      // background: red;
+    }
+
+    .mian {
+      margin: 0 auto;
+      width: 649rpx;
+      height: 1289rpx;
+      background: #E5EDE9;
+
+      // margin-top: 50rpx;
+      .image {
+        margin-top: 120rpx;
+      }
+    }
+
+
+  }
+
+  /deep/.u-text__value--info {
+    font-size: 26rpx !important;
+  }
+  
+  .msg{
+    width: 550rpx;
+    height: 550rpx;
+    text-align: center;
+    line-height: 550rpx;
+  }
